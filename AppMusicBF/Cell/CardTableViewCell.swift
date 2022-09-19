@@ -20,5 +20,4 @@ class CardTableViewCell: UITableViewCell {
     }
     
     
-    
 }
