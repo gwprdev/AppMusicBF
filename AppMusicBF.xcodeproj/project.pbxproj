@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		254AE2AD28D913350019526B /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254AE2AC28D913350019526B /* CardTableViewCell.swift */; };
 		254AE2B028D914CC0019526B /* CustomCardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254AE2AF28D914CC0019526B /* CustomCardUIView.swift */; };
-		2561300928D80D3B00805648 /* NSAttributedString + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561300428D80D3A00805648 /* NSAttributedString + Extension.swift */; };
-		2561300A28D80D3B00805648 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561300528D80D3A00805648 /* UIView + Extension.swift */; };
-		2561300B28D80D3B00805648 /* NSTextAttachment + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561300628D80D3A00805648 /* NSTextAttachment + Extension.swift */; };
-		2561300C28D80D3B00805648 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561300828D80D3A00805648 /* CardViewModel.swift */; };
+		254AE2BB28D91BA70019526B /* NSAttributedString + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254AE2B628D91BA60019526B /* NSAttributedString + Extension.swift */; };
+		254AE2BC28D91BA70019526B /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254AE2B728D91BA60019526B /* UIView + Extension.swift */; };
+		254AE2BD28D91BA70019526B /* NSTextAttachment + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254AE2B828D91BA60019526B /* NSTextAttachment + Extension.swift */; };
+		254AE2BE28D91BA70019526B /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254AE2BA28D91BA60019526B /* CardViewModel.swift */; };
 		2561300F28D80E1600805648 /* HomeViewControllerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561300E28D80E1600805648 /* HomeViewControllerScreen.swift */; };
 		25737EE628D4E4FB009980D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25737EE528D4E4FB009980D3 /* AppDelegate.swift */; };
 		25737EE828D4E4FB009980D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25737EE728D4E4FB009980D3 /* SceneDelegate.swift */; };
@@ -27,10 +27,10 @@
 		254AE2B228D9164B0019526B /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView + Extension.swift"; path = "../../../../../Downloads/Imagens ViewCode Avançado/ProjetoFinal/AppMusicBF/Extension/UIView + Extension.swift"; sourceTree = "<group>"; };
 		254AE2B328D9164B0019526B /* NSAttributedString + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NSAttributedString + Extension.swift"; path = "../../../../../Downloads/Imagens ViewCode Avançado/ProjetoFinal/AppMusicBF/Extension/NSAttributedString + Extension.swift"; sourceTree = "<group>"; };
 		254AE2B428D9164B0019526B /* NSTextAttachment + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NSTextAttachment + Extension.swift"; path = "../../../../../Downloads/Imagens ViewCode Avançado/ProjetoFinal/AppMusicBF/Extension/NSTextAttachment + Extension.swift"; sourceTree = "<group>"; };
-		2561300428D80D3A00805648 /* NSAttributedString + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString + Extension.swift"; sourceTree = "<group>"; };
-		2561300528D80D3A00805648 /* UIView + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
-		2561300628D80D3A00805648 /* NSTextAttachment + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTextAttachment + Extension.swift"; sourceTree = "<group>"; };
-		2561300828D80D3A00805648 /* CardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		254AE2B628D91BA60019526B /* NSAttributedString + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString + Extension.swift"; sourceTree = "<group>"; };
+		254AE2B728D91BA60019526B /* UIView + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		254AE2B828D91BA60019526B /* NSTextAttachment + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTextAttachment + Extension.swift"; sourceTree = "<group>"; };
+		254AE2BA28D91BA60019526B /* CardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		2561300E28D80E1600805648 /* HomeViewControllerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerScreen.swift; sourceTree = "<group>"; };
 		25737EE228D4E4FB009980D3 /* AppMusicBF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMusicBF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25737EE528D4E4FB009980D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,24 +86,22 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		2561300328D80D3A00805648 /* Extension */ = {
+		254AE2B528D91BA60019526B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				2561300428D80D3A00805648 /* NSAttributedString + Extension.swift */,
-				2561300528D80D3A00805648 /* UIView + Extension.swift */,
-				2561300628D80D3A00805648 /* NSTextAttachment + Extension.swift */,
+				254AE2B628D91BA60019526B /* NSAttributedString + Extension.swift */,
+				254AE2B728D91BA60019526B /* UIView + Extension.swift */,
+				254AE2B828D91BA60019526B /* NSTextAttachment + Extension.swift */,
 			);
-			name = Extension;
-			path = "../../../Downloads/Imagens ViewCode Avançado/ProjetoFinal/AppMusicBF/Extension";
+			path = Extension;
 			sourceTree = "<group>";
 		};
-		2561300728D80D3A00805648 /* Model */ = {
+		254AE2B928D91BA60019526B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2561300828D80D3A00805648 /* CardViewModel.swift */,
+				254AE2BA28D91BA60019526B /* CardViewModel.swift */,
 			);
-			name = Model;
-			path = "../../../Downloads/Imagens ViewCode Avançado/ProjetoFinal/AppMusicBF/Model";
+			path = Model;
 			sourceTree = "<group>";
 		};
 		2561300D28D80DE400805648 /* Home */ = {
@@ -143,8 +141,8 @@
 				25737EEE28D4E4FD009980D3 /* Assets.xcassets */,
 				25737EF028D4E4FD009980D3 /* LaunchScreen.storyboard */,
 				25737EF328D4E4FD009980D3 /* Info.plist */,
-				2561300328D80D3A00805648 /* Extension */,
-				2561300728D80D3A00805648 /* Model */,
+				254AE2B528D91BA60019526B /* Extension */,
+				254AE2B928D91BA60019526B /* Model */,
 			);
 			path = AppMusicBF;
 			sourceTree = "<group>";
@@ -222,13 +220,13 @@
 				25737EEA28D4E4FB009980D3 /* HomeViewController.swift in Sources */,
 				2561300F28D80E1600805648 /* HomeViewControllerScreen.swift in Sources */,
 				25737EE628D4E4FB009980D3 /* AppDelegate.swift in Sources */,
-				2561300B28D80D3B00805648 /* NSTextAttachment + Extension.swift in Sources */,
 				25737EE828D4E4FB009980D3 /* SceneDelegate.swift in Sources */,
+				254AE2BE28D91BA70019526B /* CardViewModel.swift in Sources */,
+				254AE2BC28D91BA70019526B /* UIView + Extension.swift in Sources */,
 				254AE2B028D914CC0019526B /* CustomCardUIView.swift in Sources */,
-				2561300A28D80D3B00805648 /* UIView + Extension.swift in Sources */,
-				2561300928D80D3B00805648 /* NSAttributedString + Extension.swift in Sources */,
+				254AE2BB28D91BA70019526B /* NSAttributedString + Extension.swift in Sources */,
 				254AE2AD28D913350019526B /* CardTableViewCell.swift in Sources */,
-				2561300C28D80D3B00805648 /* CardViewModel.swift in Sources */,
+				254AE2BD28D91BA70019526B /* NSTextAttachment + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
