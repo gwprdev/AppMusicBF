@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254AE2AD28D913350019526B /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254AE2AC28D913350019526B /* CardTableViewCell.swift */; };
 		2561300928D80D3B00805648 /* NSAttributedString + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561300428D80D3A00805648 /* NSAttributedString + Extension.swift */; };
 		2561300A28D80D3B00805648 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561300528D80D3A00805648 /* UIView + Extension.swift */; };
 		2561300B28D80D3B00805648 /* NSTextAttachment + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561300628D80D3A00805648 /* NSTextAttachment + Extension.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		254AE2AC28D913350019526B /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		2561300428D80D3A00805648 /* NSAttributedString + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString + Extension.swift"; sourceTree = "<group>"; };
 		2561300528D80D3A00805648 /* UIView + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		2561300628D80D3A00805648 /* NSTextAttachment + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTextAttachment + Extension.swift"; sourceTree = "<group>"; };
@@ -45,6 +47,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		254AE2AA28D90FD20019526B /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				2561300E28D80E1600805648 /* HomeViewControllerScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		254AE2AB28D913080019526B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				254AE2AC28D913350019526B /* CardTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		2561300328D80D3A00805648 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,8 +86,8 @@
 		2561300D28D80DE400805648 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				254AE2AA28D90FD20019526B /* Screen */,
 				25737EE928D4E4FB009980D3 /* HomeViewController.swift */,
-				2561300E28D80E1600805648 /* HomeViewControllerScreen.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -93,6 +111,7 @@
 		25737EE428D4E4FB009980D3 /* AppMusicBF */ = {
 			isa = PBXGroup;
 			children = (
+				254AE2AB28D913080019526B /* Cell */,
 				2561300D28D80DE400805648 /* Home */,
 				25737EE528D4E4FB009980D3 /* AppDelegate.swift */,
 				25737EE728D4E4FB009980D3 /* SceneDelegate.swift */,
@@ -182,6 +201,7 @@
 				25737EE828D4E4FB009980D3 /* SceneDelegate.swift in Sources */,
 				2561300A28D80D3B00805648 /* UIView + Extension.swift in Sources */,
 				2561300928D80D3B00805648 /* NSAttributedString + Extension.swift in Sources */,
+				254AE2AD28D913350019526B /* CardTableViewCell.swift in Sources */,
 				2561300C28D80D3B00805648 /* CardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
