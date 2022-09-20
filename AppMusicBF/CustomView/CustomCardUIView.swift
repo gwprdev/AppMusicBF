@@ -140,6 +140,7 @@ class CustomCardUIView: UIView {
         self.dataModel = cardData
         super.init(frame: frame)
         self.addSubViews()
+        self.setupConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -189,11 +190,25 @@ class CustomCardUIView: UIView {
             self.cardTitleLabel.leadingAnchor.constraint(equalTo: self.cardContainerView.leadingAnchor, constant: 20),
             self.cardTitleLabel.trailingAnchor.constraint(equalTo: self.cardContainerView.trailingAnchor, constant: -20),
             
+            self.cardLikeTimeLabel.topAnchor.constraint(equalTo: self.cardTitleLabel.bottomAnchor, constant: 10 ),
+            self.cardLikeTimeLabel.centerXAnchor.constraint(equalTo: self.cardContainerView.centerXAnchor),
             
-            
+            self.cardDescriptionTitleLabel.topAnchor.constraint(equalTo: self.cardLikeTimeLabel.bottomAnchor,constant: 30),
+            self.cardDescriptionTitleLabel.leadingAnchor.constraint(equalTo: self.cardContainerView.leadingAnchor, constant: 40),
+            self.cardDescriptionTitleLabel.trailingAnchor.constraint(equalTo: self.cardContainerView.trailingAnchor, constant: -40),
             
         ])
         
+    }
+    
+    public func setupView(data: CardViewModel){
+        self.cardCategoryTitleLabel.text = data.categoryName
+        self.cardCategoryDateLabel.text = data.categoryDate
+        self.cardTitleLabel.text = data.cardTitle
+        self.cardLikeTimeLabel.attributedText = NSAttributedString.featureText(data.likeCount ?? "", data.duration ?? "")
+        self.cardDescriptionTitleLabel.text = data.cardDescription
+        self.cardImage.image = UIImage(named: data.cardImage ?? "")
+        self.cardProfilePicture.image = UIImage(named: data.categoryImage ?? "")
     }
     
     private func addSubViews(){
