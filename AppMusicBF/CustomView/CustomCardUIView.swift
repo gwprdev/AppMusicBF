@@ -146,6 +146,56 @@ class CustomCardUIView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private func setupConstraints(){
+        self.containerLeadingConstraints = cardContainerView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30)
+        self.containerLeadingConstraints?.isActive =    true
+        
+        self.containerTopConstraints = cardContainerView.topAnchor.constraint(equalTo: self.topAnchor, constant: 15)
+        self.containerTopConstraints?.isActive =    true
+        
+        self.containerBottomConstraints = cardContainerView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -30)
+        self.containerBottomConstraints?.isActive =    true
+        
+        self.containerTrailingConstraints = cardContainerView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -15)
+        self.containerTrailingConstraints?.isActive =    true
+        
+        self.overlayView.pin(to: self.cardContainerView)
+        self.cardImage.pin(to: self.cardContainerView)
+        
+        
+        NSLayoutConstraint.activate([
+            self.profileBorderView.topAnchor.constraint(equalTo: self.cardContainerView.topAnchor, constant: 60),
+            self.profileBorderView.centerXAnchor.constraint(equalTo: self.cardContainerView.centerXAnchor),
+            self.profileBorderView.widthAnchor.constraint(equalToConstant: 50),
+            self.profileBorderView.heightAnchor.constraint(equalToConstant: 50),
+            
+            self.addProfileImageButton.trailingAnchor.constraint(equalTo: self.profileBorderView.trailingAnchor,constant: 4),
+            self.addProfileImageButton.bottomAnchor.constraint(equalTo: self.profileBorderView.bottomAnchor,constant: 4),
+            self.addProfileImageButton.widthAnchor.constraint(equalToConstant: 20),
+            self.addProfileImageButton.heightAnchor.constraint(equalToConstant: 20),
+            
+            self.cardProfilePicture.centerXAnchor.constraint(equalTo: self.profileBorderView.centerXAnchor),
+            self.cardProfilePicture.centerYAnchor.constraint(equalTo: self.profileBorderView.centerYAnchor),
+            self.cardProfilePicture.widthAnchor.constraint(equalToConstant: 40),
+            self.cardProfilePicture.heightAnchor.constraint(equalToConstant: 40),
+            
+            self.cardCategoryTitleLabel.topAnchor.constraint(equalTo: self.profileBorderView.bottomAnchor, constant: 10),
+            self.cardCategoryTitleLabel.centerXAnchor.constraint(equalTo: self.cardContainerView.centerXAnchor),
+            
+            self.cardCategoryDateLabel.topAnchor.constraint(equalTo: self.cardCategoryTitleLabel.bottomAnchor, constant: 5),
+            self.cardCategoryDateLabel.centerXAnchor.constraint(equalTo: self.cardContainerView.centerXAnchor),
+            
+            self.cardTitleLabel.topAnchor.constraint(equalTo: self.cardCategoryDateLabel.bottomAnchor, constant: 20),
+            self.cardTitleLabel.leadingAnchor.constraint(equalTo: self.cardContainerView.leadingAnchor, constant: 20),
+            self.cardTitleLabel.trailingAnchor.constraint(equalTo: self.cardContainerView.trailingAnchor, constant: -20),
+            
+            
+            
+            
+        ])
+        
+    }
+    
     private func addSubViews(){
         self.addSubview(self.cardContainerView)
         self.cardContainerView.addSubview(self.cardImage)
