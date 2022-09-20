@@ -20,7 +20,7 @@ class CustomCardUIView: UIView {
     var containerTrailingConstraints:NSLayoutConstraint?
     var containerBottomConstraints:NSLayoutConstraint?
     var dataModel:CardViewModel?
-
+    
     //MARK: ELEMENTOS
     //CardContainerView é o cara que vai receber todos os elementos.
     lazy var cardContainerView: UIView = {
@@ -40,12 +40,12 @@ class CustomCardUIView: UIView {
         img.translatesAutoresizingMaskIntoConstraints = false
         img.contentMode = .scaleAspectFill
         img.backgroundColor = .black
-       return img
+        return img
     }()
     
     // view que escurece a imagem do card
     lazy var overlayView:UIView = {
-       let v = UIView()
+        let v = UIView()
         v.translatesAutoresizingMaskIntoConstraints = false
         v.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         return v
@@ -55,7 +55,7 @@ class CustomCardUIView: UIView {
     
     // view que escurece a imagem do card
     lazy var profileBorderView:UIView = {
-       let v = UIView()
+        let v = UIView()
         v.translatesAutoresizingMaskIntoConstraints = false
         v.backgroundColor = .clear
         v.layer.borderWidth = 1
@@ -73,12 +73,12 @@ class CustomCardUIView: UIView {
         img.backgroundColor = .black
         img.clipsToBounds = true
         img.layer.cornerRadius = 20
-       return img
+        return img
     }()
     
     //botão de adicionar imagem do usuário
     lazy var addProfileImageButton: UIButton = {
-        let btn: UIButton
+        let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.backgroundColor = .white
         btn.setBackgroundImage(UIImage(named: "plus"), for: .normal)
@@ -89,11 +89,11 @@ class CustomCardUIView: UIView {
     
     //categoria da musica
     lazy var cardCategoryTitleLabel: UILabel = {
-    let l = UILabel()
-    l.translatesAutoresizingMaskIntoConstraints = false
+        let l = UILabel()
+        l.translatesAutoresizingMaskIntoConstraints = false
         l.font = UIFont.systemFont(ofSize: 12,weight: .bold)
-    l.textColor = .white
-    return l
+        l.textColor = .white
+        return l
     }()
     
     //data categoria
@@ -130,14 +130,12 @@ class CustomCardUIView: UIView {
     lazy var cardLikeTimeLabel: UILabel = {
         let l = UILabel()
         l.translatesAutoresizingMaskIntoConstraints = false
-
+        
         return l
     }()
     
-    init(viewMode:ViewMode, cardData:CardViewModel){
+    init(){
         let frame = CGRect.zero
-        self.vmode = viewMode
-        self.dataModel = cardData
         super.init(frame: frame)
         self.addSubViews()
         self.setupConstraints()
