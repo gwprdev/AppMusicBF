@@ -129,9 +129,48 @@ class CardActionView: UIView {
     private func setupConstraints(){
         self.stackView.pin(to: self)
         NSLayoutConstraint.activate([
-        
-        
+            self.downloadButtom.centerXAnchor.constraint(equalTo: self.downloadView.centerXAnchor),
+            self.downloadView.centerYAnchor.constraint(equalTo: self.downloadView.centerYAnchor),
+            self.downloadButtom.widthAnchor.constraint(equalToConstant: 45),
+            self.downloadButtom.heightAnchor.constraint(equalToConstant: 45),
+            
+            self.notInterestedButtom.centerXAnchor.constraint(equalTo: self.notInterestedView.centerXAnchor),
+            self.notInterestedButtom.centerYAnchor.constraint(equalTo: self.notInterestedView.centerYAnchor),
+            self.notInterestedButtom.widthAnchor.constraint(equalToConstant: 45),
+            self.notInterestedButtom.heightAnchor.constraint(equalToConstant: 45),
+            
+            self.playButtom.centerXAnchor.constraint(equalTo: self.playView.centerXAnchor),
+            self.playButtom.centerYAnchor.constraint(equalTo: self.playView.centerYAnchor),
+            self.playButtom.widthAnchor.constraint(equalToConstant: 70),
+            self.playButtom.heightAnchor.constraint(equalToConstant: 70),
+            
+            self.likeButtom.centerXAnchor.constraint(equalTo: self.likeView.centerXAnchor),
+            self.likeButtom.centerYAnchor.constraint(equalTo: self.likeView.centerYAnchor),
+            self.likeButtom.widthAnchor.constraint(equalToConstant: 45),
+            self.likeButtom.heightAnchor.constraint(equalToConstant: 45),
+            
+            self.moreButtom.centerXAnchor.constraint(equalTo: self.moreView.centerXAnchor),
+            self.moreButtom.centerYAnchor.constraint(equalTo: self.moreView.centerYAnchor),
+            self.moreButtom.widthAnchor.constraint(equalToConstant: 45),
+            self.moreButtom.heightAnchor.constraint(equalToConstant: 45),
         ])
     }
     
+    
+    public func updateLayout(for mode: ViewMode){
+        if mode == .full{
+            self.downloadView.isHidden = false
+            self.moreView.isHidden = false
+            self.stackView.addArrangedSubview(self.downloadView)
+            self.stackView.addArrangedSubview(self.notInterestedView)
+            self.stackView.addArrangedSubview(self.playView)
+            self.stackView.addArrangedSubview(self.likeView)
+            self.stackView.addArrangedSubview(self.moreView)
+        }else{
+            self.downloadView.isHidden = true
+            self.moreView.isHidden = true
+            self.stackView.removeArrangedSubview(self.downloadView)
+            self.stackView.removeArrangedSubview(self.moreView)
+        }
+    }
 }
