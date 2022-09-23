@@ -15,6 +15,8 @@
 		254AE2BD28D91BA70019526B /* NSTextAttachment + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254AE2B828D91BA60019526B /* NSTextAttachment + Extension.swift */; };
 		254AE2BE28D91BA70019526B /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254AE2BA28D91BA60019526B /* CardViewModel.swift */; };
 		2561300F28D80E1600805648 /* HomeViewControllerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561300E28D80E1600805648 /* HomeViewControllerScreen.swift */; };
+		2566861628DE79C100CB8676 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2566861528DE79C100CB8676 /* DetailViewController.swift */; };
+		2566861928DE7A1300CB8676 /* DetailViewControllerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2566861828DE7A1300CB8676 /* DetailViewControllerScreen.swift */; };
 		25737EE628D4E4FB009980D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25737EE528D4E4FB009980D3 /* AppDelegate.swift */; };
 		25737EE828D4E4FB009980D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25737EE728D4E4FB009980D3 /* SceneDelegate.swift */; };
 		25737EEA28D4E4FB009980D3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25737EE928D4E4FB009980D3 /* HomeViewController.swift */; };
@@ -34,6 +36,8 @@
 		254AE2B828D91BA60019526B /* NSTextAttachment + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTextAttachment + Extension.swift"; sourceTree = "<group>"; };
 		254AE2BA28D91BA60019526B /* CardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		2561300E28D80E1600805648 /* HomeViewControllerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerScreen.swift; sourceTree = "<group>"; };
+		2566861528DE79C100CB8676 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2566861828DE7A1300CB8676 /* DetailViewControllerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerScreen.swift; sourceTree = "<group>"; };
 		25737EE228D4E4FB009980D3 /* AppMusicBF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMusicBF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25737EE528D4E4FB009980D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25737EE728D4E4FB009980D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +121,23 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		2566861428DE794500CB8676 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2566861728DE79E400CB8676 /* Screen */,
+				2566861528DE79C100CB8676 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		2566861728DE79E400CB8676 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				2566861828DE7A1300CB8676 /* DetailViewControllerScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		25737ED928D4E4FB009980D3 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +157,7 @@
 		25737EE428D4E4FB009980D3 /* AppMusicBF */ = {
 			isa = PBXGroup;
 			children = (
+				2566861428DE794500CB8676 /* Detail */,
 				254AE2AE28D914A90019526B /* CustomView */,
 				254AE2AB28D913080019526B /* Cell */,
 				2561300D28D80DE400805648 /* Home */,
@@ -220,9 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2566861928DE7A1300CB8676 /* DetailViewControllerScreen.swift in Sources */,
 				25737EEA28D4E4FB009980D3 /* HomeViewController.swift in Sources */,
 				2561300F28D80E1600805648 /* HomeViewControllerScreen.swift in Sources */,
 				25737EE628D4E4FB009980D3 /* AppDelegate.swift in Sources */,
+				2566861628DE79C100CB8676 /* DetailViewController.swift in Sources */,
 				25737EE828D4E4FB009980D3 /* SceneDelegate.swift in Sources */,
 				254AE2BE28D91BA70019526B /* CardViewModel.swift in Sources */,
 				254AE2BC28D91BA70019526B /* UIView + Extension.swift in Sources */,
